@@ -13,9 +13,12 @@ app.use(express.json());
 
 const port = process.env.PORT || 5000;
 
+
 app.use("/api/users", userRoute);
 app.use("/api/notes", noteRoute);
 
+
+//process.env
 //---- deployment-----//
 const __dirname1 = path.resolve();
 if (process.env.NODE_ENV === "production") {
